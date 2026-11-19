@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+</head>
+<body>
+
+  <main class="form-card">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Have a question or project in mind? Send a message below.</p>
+
+    <form action="#" method="POST">
+      <div class="row">
+        <div class="field">
+          <label for="first-name">First Name <span class="req">*</span></label>
+          <input type="text" id="first-name" name="first_name" placeholder="Jane" required>
+        </div>
+
+        <div class="field">
+          <label for="last-name">Last Name <span class="req">*</span></label>
+          <input type="text" id="last-name" name="last_name" placeholder="Doe" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address <span class="req">*</span></label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+      </div>
+
+      <fieldset class="field">
+        <legend>Query Type <span class="req">*</span></legend>
+        <div class="radio-group">
+          <label class="radio-box">
+            <input type="radio" name="query_type" value="general" required>
+            <span>General Enquiry</span>
+          </label>
+
+          <label class="radio-box">
+            <input type="radio" name="query_type" value="support">
+            <span>Support Request</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="message">Message <span class="req">*</span></label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <div class="field consent-row">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I consent to being contacted by the team <span class="req">*</span></label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </main>
+
+</body>
+</html>
